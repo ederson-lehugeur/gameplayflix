@@ -31,8 +31,9 @@ function CadastroCategoria() {
     }
 
     useEffect(() => {
-        console.log('Hello');
-        const URL = 'http://localhost:8080/categorias';
+        const URL = window.location.hostname.includes('localhost')
+            ? 'http://localhost:8080/categorias'
+            : 'https://gameplayflix.herokuapp.com/categorias';
         fetch(URL)
             .then(async (respostaServidor) => {
                 const resp = await respostaServidor.json();
