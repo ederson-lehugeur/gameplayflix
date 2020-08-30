@@ -7,9 +7,9 @@ import Button from '../Button';
 function Menu() {
     return (
         <nav className="Menu">
-            <a to="/">
-                <img className="Logo" src={Logo} alt="GamePlayFlix" />
-            </a>
+            <Link to="/">
+                <img className="Logo" src={Logo} alt="GamePlayFlix logo" />
+            </Link>
 
             <Button as={Link} className="ButtonLink" to="/cadastro/video">
                 Novo vídeo

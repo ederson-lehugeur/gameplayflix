@@ -27,24 +27,6 @@ function CadastroCategoria() {
                     ...resp,
                 ]);
             });
-
-        /*setTimeout(() => {
-            setCategorias([
-                ...categorias,
-                {
-                    "id": 1,
-                    "nome": "Front End",
-                    "descricao": "Uma categoria show",
-                    "cor": "#cbd1ff"
-                },
-                {
-                    "id": 2,
-                    "nome": "Back End",
-                    "descricao": "Outra categoria show",
-                    "cor": "#cbd1ff"
-                },
-            ])
-        }, 2 * 1000);*/
     }, []);
 
     return (
@@ -77,18 +59,6 @@ function CadastroCategoria() {
                     onChange={handleChange}
                 />
 
-                {/*<div>
-                    <label>
-                        Descrição:
-                        <input
-                            type="text"
-                            name="descricao"
-                            value={values.descricao}
-                            onChange={handleChange}
-                        />
-                    </label>
-                </div>*/}
-
                 <FormField
                     label="Cor"
                     type="color"
@@ -106,7 +76,7 @@ function CadastroCategoria() {
                 Loading...
             </div>}
 
-            <ul>
+            {/* <ul>
                 {categorias.map((categoria, indice) => {
                     return (
                         <li key={`${categoria.nome}`}>
@@ -114,10 +84,10 @@ function CadastroCategoria() {
                         </li>
                     )
                 })}
-            </ul>
+            </ul> */}
 
             <Link to="/">
-                Ir para home
+                Voltar para home
             </Link>
         </PageDefault>
     )
